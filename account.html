@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img width="300px" height="80px"
+                        src="images/WhatsApp Image 2023-07-07 at 06.05.09.jpg"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="card.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-bar" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+    <!-- Account-page -->
+
+
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="loginForms()">Login</span>
+                            <span onclick="registerForm()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button id="loging" class="btn">Login</button>
+                            <a href="">Forget Password</a>
+                        </form>
+                        <form id="regform">
+                            <input id="username" type="text" placeholder="Username">
+                            <input id="email" type="email" placeholder="Email">
+                            <input id="password" type="password" placeholder="Password">
+                            <button id="submitData" class="btn">Rejister</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/footer-logo.jpg" width="300px" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Copouns</li>
+                        <li>Blog Post</li>
+                        <li>Retuns Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Folow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twiter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <hr />
+            <p class="copy-right">
+                Created By Zain Manjothi | 2023
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="module" src="register.js"></script>
+    <script type="module" src="login.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
